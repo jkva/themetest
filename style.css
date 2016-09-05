@@ -1,0 +1,468 @@
+/*
+Theme Name: Tau Station
+Theme URI: N/A
+Author: Tau Station Team
+Author URI: http://www.taustation.space
+Description: The Tau Station website theme
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: dark
+Text Domain: taustation
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+body {
+    color: #fff;
+    font-family: 'Electrolize', sans-serif;
+    
+}
+
+/** LANDING PAGE **/
+
+.home main {
+    padding: 0;
+    margin: 0;
+}
+
+.home footer {
+    padding: 0;
+    padding-bottom: 1em;
+}
+
+.home footer .site-info {
+    margin: 0 auto;
+    margin-top: 1em;
+    text-align: center;
+}
+
+footer .site-info {
+    color: #ccc;
+    margin-left: auto;
+}
+
+/** SITE HEADER - CONTAINING LOGO AND SIGN UP **/
+
+/** .home - apply to home page only 
+    .sign-up-header - apply to all other pages **/
+
+.sign-up-header-container {
+    background-color: #191b20;
+}
+
+.sign-up-header-container .sign-up-header {
+    margin: 0;
+}
+
+@media screen and (min-width:1000px) {
+    .sign-up-header-container .sign-up-header {
+        margin: 0 15%;
+    }
+}
+
+.sign-up-header .logo-container {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.sign-up-link-container {
+    text-align: center;
+    padding: 10px 1em;
+    font-size: .875rem;
+    display: block;
+    width: 100%;
+}
+
+.sign-up-header .logo-small {
+    margin: 10px 0 ;
+}
+
+.sign-up-header .tau-blog-link-desktop {
+    display: none;
+    text-decoration: underline;
+}
+
+.blog-link-container-mobile {
+    background-color: #191b20;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    text-align: center;
+}
+
+.tau-blog-link-mobile {
+    color: #52b4bb;
+    text-decoration: underline;
+    font-size: 2em;
+}
+
+
+
+.home .sign-up-link-container {
+    background-color: #173d4f;
+}
+
+
+.home .sign-up-link-container div {
+    text-align: center;
+}
+
+.btn-centre {
+    text-align: center;
+    display: block;
+    margin-bottom: .5em;
+    margin-top: .5em;
+}
+
+.sign-up-link-container div a {
+    background-color: #30737c;
+    border: 1px solid #548c92;
+    color: #fff;
+    text-align: center;
+    padding: .7em 3em;
+    display: inline-block;
+}
+
+.sign-up-link-container div p {
+    margin-bottom: 10px;
+    color: #52b4bb;
+    padding: 0 1em;
+}
+
+.site-title {
+    text-align: center;
+}
+
+#menu-toggle {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.site-branding {
+    margin: 0.875em auto ;
+    width: 100%;
+}
+
+@media screen and (min-width:1000px) {
+
+    .site-branding {
+        display: table;
+    }
+    .sign-up-header-container .sign-up-header {
+        max-width: 1320px;
+        display: table;
+        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sign-up-header .logo-container {
+        width: 40%;
+        display: table-cell;
+        text-align: left;
+        vertical-align: middle;
+    }
+
+    .site-title {
+        width: 40%;
+        display: table-cell;
+        vertical-align: middle;
+        
+    }
+
+    .site-title a {
+        display: block;
+    }
+
+
+    .sign-up-link-container {
+        width: 60%;
+        padding: 0;
+       display: table-cell;
+       vertical-align: middle;
+    }
+
+    .home .sign-up-link-container {
+        margin-top: 0;
+        width: 60%;
+        transform: skew(-20deg);
+        padding: 10px 2%;
+    }
+
+    .sign-up-header .logo-small {
+        display: inline-block;
+    }
+
+    .blog-link-container-mobile {
+        display: none;
+    } 
+
+    .sign-up-header .tau-blog-link-desktop {
+        display: inline-block;
+        color: #52b4bb;
+        margin-left: 12%;
+        font-size: 2em;
+    }
+
+    .home .sign-up-link-container .inner-container {
+        transform: skew(20deg); 
+        text-align: center;
+    }
+
+    .sign-up-link-container div a {
+        transform: skew(-20deg); 
+        display: block;
+        padding: .5em;
+        width: 38%;
+        float: left;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .sign-up-link-container div a span {
+        transform: skew(20deg); 
+        display: block;
+    }
+
+    .sign-up-link-container div p {
+        width: 55%;
+        float: left;
+        margin: 0 2% 0 0;
+        text-align: left;
+        
+    }
+
+    .home .sign-up-link-container {
+        transform: skew(-20deg);
+        text-anchor: center;
+    }
+
+    /*.sign-up-header .home .sign-up-link-container {
+        width: 60%;
+        display: inline-block;
+        transform: skew(-20deg);
+        padding: 10px 2%;
+    }*/
+
+    .tag-line {
+        width: 550px;
+    }
+}
+
+#above-the-fold {
+    position: relative;
+    background-image: url('/wp-content/themes/taustation_new/images/landing_hero_small.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ /*   height: 100%;*/
+}
+
+@media screen and (min-width:800px) {
+    #above-the-fold {
+        background-image: url('/wp-content/themes/taustation_new/images/landing_hero_medium.jpg');
+    }
+}
+
+@media screen and (min-width:1024px) {
+    #above-the-fold {
+        background-image: url('/wp-content/themes/taustation_new/images/landing_hero_large.jpg');
+    }
+}
+
+@media screen and (min-width:1680px) {
+    #above-the-fold {
+        background-image: url('/wp-content/themes/taustation_new/images/landing_hero_huge.jpg');
+    }
+}
+
+/* Tag line images */
+#above-the-fold .tag-line-container {
+    display: block;
+    text-align: center;
+}
+
+#above-the-fold .tag-line {
+    margin: 1em 0;
+    padding: 0 1em;
+}
+
+/** Front Page - Game Features section **/
+
+#game-features {
+    background-image: url('/wp-content/themes/taustation_new/images/game_features_small.jpg');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+@media screen and (min-width:800px) {
+    #game-features {
+        background-image: url('/wp-content/themes/taustation_new/images/game_features_medium.jpg');
+    }
+}
+
+@media screen and (min-width:1024px) {
+    #game-features {
+        background-image: url('/wp-content/themes/taustation_new/images/game_features_large.jpg');
+    }
+}
+
+@media screen and (min-width:1680px) {
+    #game-features {
+        background-image: url('/wp-content/themes/taustation_new/images/game_features_huge.jpg');
+    }
+}
+
+#game-features h2,
+#welcome h2 {
+    color: #82f1fd;
+    text-transform: uppercase;
+    font-size: 2em;
+    padding: 0.3em;
+}
+
+#game-features h2 {
+    padding-left: 48px;
+}
+
+#game-features section {
+    max-width: 1320px;
+    margin: 5% auto;
+    padding: 1em;
+    position: relative;
+    overflow: hidden;
+}
+
+
+@media screen and (max-width:60em) {
+    #game-features section {
+        margin: 0;
+    }
+}
+
+#game-features .left-column div,
+#game-features .right-column div {
+    margin: 0em 1em;
+    padding-left: 30px;
+    background-image: url('/wp-content/themes/taustation_new/images/tau_station_chevron.png');
+    background-position: top left;
+    background-repeat: no-repeat;
+    min-height: 7em;
+    vertical-align: top;
+}
+
+#game-features span {
+    background-color: rgba(0,0,0,0.4);
+    padding: 0.5em;
+}
+ 
+
+#game-features .left-column {
+    float: left;
+    width: 49%;
+    vertical-align: top;
+}
+
+#game-features .right-column {
+    float: right;
+    width: 49%;
+    vertical-align: top;
+}
+
+@media screen and (max-width:65em) {
+    #game-features .left-column,
+    #game-features .right-column {
+        float: none;
+        display: block;
+        width: 100%;
+    }
+
+    #game-features .left-column div,
+    #game-features .right-column div {
+        background-position: center left;
+        min-height: 0em;
+        padding: 1em;
+        padding-left: 30px;
+    }
+}
+
+/** Front Page - Welcome Section **/
+
+#welcome {
+    background-image: url('/wp-content/themes/taustation_new/images/welcome_text_small.jpg');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#welcome .more-link {
+    background-color: transparent;
+}
+
+@media screen and (min-width:800px) {
+    #welcome {
+        background-image: url('/wp-content/themes/taustation_new/images/welcome_text_medium.jpg');
+    }
+}
+
+@media screen and (min-width:1024px) {
+    #welcome {
+        background-image: url('/wp-content/themes/taustation_new/images/welcome_text_large.jpg');
+    }
+}
+
+@media screen and (min-width:1680px) {
+    #welcome {
+        background-image: url('/wp-content/themes/taustation_new/images/welcome_text_huge.jpg');
+    }
+}
+
+#welcome h3 {
+    padding-left: 0;
+    margin-bottom: 1em;
+}
+
+#welcome section {
+    max-width: 1320px;
+    margin: 2em auto;
+    padding: 2.5em;
+    position: relative;
+    background-color: #222;
+    background-color: rgba(0,0,0,0.6);
+    overflow: hidden;
+}
+
+#welcome .read-more {
+    background-image: url('/wp-content/themes/taustation_new/images/separator_lines.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-top: 2em;
+}
+
+@media screen and (max-width:80em) {
+    #welcome section {
+        margin: 1em auto;
+    }
+}
+
+@media screen and (max-width:60em) {
+    #welcome section {
+        margin: 1em auto;
+    }
+
+    #welcome section div {
+        float: none;
+        width: 100%;
+    }
+}
+
+
